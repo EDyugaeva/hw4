@@ -3,20 +3,22 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
-//        task1();
+        task1();
         task2();
-//        task3();
+        task3();
     }
 
     public static void task1() {
         byte number = 0;
         while (number < 10) {
             number++;
-            System.out.println(number + " ");
+            System.out.print(number + " ");
         }
+        System.out.println();
         for (byte i = 10; i > 0; i = (byte) (i - 1)) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
+        System.out.println();
     }
 
     public static void task2() {
