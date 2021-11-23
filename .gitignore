@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+/hw4.iml
+/.idea/
