@@ -24,10 +24,10 @@ public class Main {
     public static void task2() {
         int firstFriday = 3;
         int n = 0;
-        for (int day = 0; day <= 31; day = day + 1) {
+        for (int day = 0; day <= 31; day ++) {
             if (day == firstFriday + 7 * n) {
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
-                n = n + 1;
+                n++;
             }
         }
     }
@@ -36,9 +36,11 @@ public class Main {
         int year = 2021;
         int last = year - 200;
         int future = year + 100;
-        for (int a = last; a < future; a = a + 1) {
-            if (a == 1896 || a == 1975 || a == 2054) {
+        int n = 0;
+        for (int a = last; a < future; a++) {
+            if (a == 1896 + 79 * n) {
                 System.out.println(a);
+                n++;
             }
         }
     }
