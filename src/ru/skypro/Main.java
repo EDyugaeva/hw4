@@ -24,7 +24,7 @@ public class Main {
     public static void task2() {
         int firstFriday = 3;
         int n = 0;
-        for (int day = 0; day < 32; day = day + 1) {
+        for (int day = 0; day <= 31; day = day + 1) {
             if (day == firstFriday + 7 * n) {
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
                 n = n + 1;
@@ -42,5 +42,4 @@ public class Main {
             }
         }
     }
-
 }
