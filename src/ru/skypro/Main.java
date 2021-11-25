@@ -9,38 +9,32 @@ public class Main {
     }
 
     public static void task1() {
-        byte number = 0;
+        int number = 0;
         while (number < 10) {
             number++;
             System.out.print(number + " ");
         }
         System.out.println();
-        for (byte i = 10; i > 0; i = (byte) (i - 1)) {
+        for (int i = 10; i > 0; i = (i - 1)) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
     public static void task2() {
-        int firstFriday = 3;
-        int n = 0;
-        for (int day = 0; day <= 31; day ++) {
-            if (day == firstFriday + 7 * n) {
-                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
-                n++;
-            }
+        int friday = 3;
+        for (; friday < 32; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
     }
 
     public static void task3() {
-        int year = 2021;
-        int last = year - 200;
-        int future = year + 100;
-        int n = 0;
-        for (int a = last; a < future; a++) {
-            if (a == 1896 + 79 * n) {
-                System.out.println(a);
-                n++;
+        int currentYear = 2021;
+        int last = currentYear - 200;
+        int future = currentYear + 100;
+        for (int comet = 0; comet < future; comet = comet + 79) {
+            if (comet > last) {
+                System.out.println(comet);
             }
         }
     }
