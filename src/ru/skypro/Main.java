@@ -5,7 +5,10 @@ public class Main {
     public static void main(String[] args) {
 //        task1();
 //        task2();
-        task3();
+//        task3();
+//        task4();
+        task5();
+
     }
 
     public static void task1() {
@@ -40,5 +43,30 @@ public class Main {
                 System.out.println(i);
             }
         }
+    }
+
+    public static void task4() {
+        for (int i = 1; i <= 30; i++) {
+            System.out.print(i);
+            if (i % 3 == 0) {
+                System.out.print(" ping");
+            }
+            if (i % 5 == 0) {
+                System.out.print(" pong");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    public static void task5() {
+        int a = 0;
+        int b = 1;
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+
     }
 }
